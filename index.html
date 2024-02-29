@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Race</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <div class="controls">
+        <button id="startButton">Start</button>
+        <div class="sliders">
+            <div class="wrapper">
+                <label for="car1">Car 1 Speed:</label>
+                <input type="range" id="car1" min="1" max="10" value="5" class="slider">
+                <input type="range" id="bet1" min="0" max="1000" value="0" class="bet-slider">
+            </div>
+            
+            <div class="wrapper">
+                <label for="car2">Car 2 Speed:</label>
+                <input type="range" id="car2" min="1" max="10" value="5" class="slider">
+                <input type="range" id="bet2" min="0" max="1000" value="0" class="bet-slider">
+            </div>
+
+            <div class="wrapper">
+                <label for="car3">Car 3 Speed:</label>
+                <input type="range" id="car3" min="1" max="10" value="5" class="slider">
+                <input type="range" id="bet3" min="0" max="1000" value="0" class="bet-slider">
+            </div>
+            
+            <div class="wrapper">
+                <label for="car4">Car 4 Speed:</label>
+                <input type="range" id="car4" min="1" max="10" value="5" class="slider">
+                <input type="range" id="bet4" min="0" max="1000" value="0" class="bet-slider">
+            </div>
+        </div>
+        <h2 id="balanceValue">Balance: 1000</h2>
+    </div>
+    <h2 id="endMessage" class="hidden"></h2>
+    <script src="script.js"></script>
+</body>
+</html>
